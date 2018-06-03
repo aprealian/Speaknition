@@ -1,0 +1,337 @@
+{
+	"id": "919673db-d753-034c-9efc-fe28774d8a7e",
+	"name": "1NLP",
+	"description": "",
+	"order": [
+		"99ba7020-a245-afa3-e21e-83206a28da67",
+		"7cbb0660-2c4b-e93b-4a5a-28e3a5183df6",
+		"7140d9e7-a0ce-cd62-b61e-d752651c0358",
+		"929578ae-1057-9bbc-f770-5e85d49904e9",
+		"70d52994-ba1c-96b5-ea6f-142c645a5008",
+		"b7ba27a5-da5f-7174-7e39-be2b4567c5a6",
+		"96fb27de-b8fe-e763-1ee6-cdf13f22e733",
+		"e3e0a8ee-a119-7a92-da37-c5b75aaa7bd8"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1527987968529,
+	"owner": "1651910",
+	"public": false,
+	"requests": [
+		{
+			"id": "70d52994-ba1c-96b5-ea6f-142c645a5008",
+			"headers": "Content-Type: application/json\nOcp-Apim-Subscription-Key: efd13991f15f486dac04dcfbcab81993\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Ocp-Apim-Subscription-Key",
+					"value": "efd13991f15f486dac04dcfbcab81993",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://westus.api.cognitive.microsoft.com/spid/v1.0/identificationProfiles?locale=en-us",
+			"queryParams": [
+				{
+					"key": "locale",
+					"value": "en-us",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1527991067048,
+			"name": "Create Profile",
+			"description": "",
+			"collectionId": "919673db-d753-034c-9efc-fe28774d8a7e",
+			"responses": [],
+			"rawModeData": "{\r\n  \"locale\":\"en-us\"\r\n}"
+		},
+		{
+			"id": "7140d9e7-a0ce-cd62-b61e-d752651c0358",
+			"headers": "Content-Type: application/octet-stream\nOcp-Apim-Subscription-Key: efd13991f15f486dac04dcfbcab81993\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/octet-stream",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Ocp-Apim-Subscription-Key",
+					"value": "efd13991f15f486dac04dcfbcab81993",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://westus.api.cognitive.microsoft.com/spid/v1.0/identificationProfiles/2968d90a-6265-4dac-a2ee-bf90eb25bb65/enroll",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "binary",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1528006696674,
+			"name": "Enroll",
+			"description": "",
+			"collectionId": "919673db-d753-034c-9efc-fe28774d8a7e",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "7cbb0660-2c4b-e93b-4a5a-28e3a5183df6",
+			"headers": "Content-Type: application/octet-stream\nOcp-Apim-Subscription-Key: efd13991f15f486dac04dcfbcab81993\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/octet-stream",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Ocp-Apim-Subscription-Key",
+					"value": "efd13991f15f486dac04dcfbcab81993",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://westus.api.cognitive.microsoft.com/spid/v1.0/identify?identificationProfileIds=77347b39-9511-499c-971a-257e2bbcae90,\nc709bb3a-43af-4e48-bd65-5b2a8aa8a411,\ndf9df6be-16d3-4e46-887a-792e335316bf&shortAudio=true ",
+			"queryParams": [
+				{
+					"key": "identificationProfileIds",
+					"value": "77347b39-9511-499c-971a-257e2bbcae90,\nc709bb3a-43af-4e48-bd65-5b2a8aa8a411,\ndf9df6be-16d3-4e46-887a-792e335316bf",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "shortAudio",
+					"value": "true ",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "binary",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1527991058878,
+			"name": "Identify copy",
+			"description": "",
+			"collectionId": "919673db-d753-034c-9efc-fe28774d8a7e",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "929578ae-1057-9bbc-f770-5e85d49904e9",
+			"headers": "//Content-Type: application/octet-stream\nOcp-Apim-Subscription-Key: efd13991f15f486dac04dcfbcab81993\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/octet-stream",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Ocp-Apim-Subscription-Key",
+					"value": "efd13991f15f486dac04dcfbcab81993",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://westus.api.cognitive.microsoft.com/spid/v1.0/operations/b8df84c3-1300-45ad-9f0c-7e1fb76ac0b9",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "binary",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1527996573489,
+			"name": "Get Status",
+			"description": "",
+			"collectionId": "919673db-d753-034c-9efc-fe28774d8a7e",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "96fb27de-b8fe-e763-1ee6-cdf13f22e733",
+			"headers": "//Content-Type: application/json\nOcp-Apim-Subscription-Key: efd13991f15f486dac04dcfbcab81993\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Ocp-Apim-Subscription-Key",
+					"value": "efd13991f15f486dac04dcfbcab81993",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://westus.api.cognitive.microsoft.com/spid/v1.0/verificationProfiles/77347b39-9511-499c-971a-257e2bbcae90",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1527996177493,
+			"name": "Get Profile",
+			"description": "",
+			"collectionId": "919673db-d753-034c-9efc-fe28774d8a7e",
+			"responses": []
+		},
+		{
+			"id": "99ba7020-a245-afa3-e21e-83206a28da67",
+			"headers": "Content-Type: application/octet-stream\nOcp-Apim-Subscription-Key: efd13991f15f486dac04dcfbcab81993\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/octet-stream",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Ocp-Apim-Subscription-Key",
+					"value": "efd13991f15f486dac04dcfbcab81993",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://westus.api.cognitive.microsoft.com/spid/v1.0/identify?identificationProfileIds=111f427c-3791-468f-b709-fcef7660fff9,111f427c-3791-468f-b709-fcef7660fff9,111f427c-3791-468f-b709-fcef7660fff9&shortAudio=true ",
+			"queryParams": [
+				{
+					"key": "identificationProfileIds",
+					"value": "111f427c-3791-468f-b709-fcef7660fff9,111f427c-3791-468f-b709-fcef7660fff9,111f427c-3791-468f-b709-fcef7660fff9",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "shortAudio",
+					"value": "true ",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "binary",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1527991061375,
+			"name": "Identify",
+			"description": "",
+			"collectionId": "919673db-d753-034c-9efc-fe28774d8a7e",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "b7ba27a5-da5f-7174-7e39-be2b4567c5a6",
+			"headers": "//Content-Type: application/json\nOcp-Apim-Subscription-Key: efd13991f15f486dac04dcfbcab81993\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Ocp-Apim-Subscription-Key",
+					"value": "efd13991f15f486dac04dcfbcab81993",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://westus.api.cognitive.microsoft.com/spid/v1.0/identificationProfiles",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1527996613980,
+			"name": "Get All Profile",
+			"description": "",
+			"collectionId": "919673db-d753-034c-9efc-fe28774d8a7e",
+			"responses": []
+		},
+		{
+			"id": "e3e0a8ee-a119-7a92-da37-c5b75aaa7bd8",
+			"headers": "//Content-Type: application/json\nOcp-Apim-Subscription-Key: efd13991f15f486dac04dcfbcab81993\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Ocp-Apim-Subscription-Key",
+					"value": "efd13991f15f486dac04dcfbcab81993",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://westus.api.cognitive.microsoft.com/spid/v1.0/identificationProfiles/ed378761-ed7f-4558-8203-023eeee6ae50",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1527991072451,
+			"name": "Delete Profile",
+			"description": "",
+			"collectionId": "919673db-d753-034c-9efc-fe28774d8a7e",
+			"responses": []
+		}
+	]
+}

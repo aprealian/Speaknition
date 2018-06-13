@@ -1,10 +1,14 @@
 package com.teknokrait.speaknition;
 
+import android.Manifest;
+import android.content.pm.PackageManager;
 import android.media.AudioFormat;
 import android.media.AudioRecord;
 import android.media.MediaRecorder;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.text.TextUtils;
 import android.util.Log;
@@ -117,7 +121,16 @@ public final class IdentificationFragment extends Fragment {
         youAreTextView.setVisibility(View.GONE);
         resultTextView.setVisibility(View.GONE);
 
-        audioRecord.startRecording();
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            //User has previously accepted this permission
+            if (ActivityCompat.checkSelfPermission(getActivity(),
+                    Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED) {
+                audioRecord.startRecording();
+            }
+        } else {
+            //Not in api-23, no need to prompt
+            audioRecord.startRecording();
+        }
         isRecording = true;
 
         new Thread(() -> {
